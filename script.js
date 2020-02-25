@@ -54,3 +54,34 @@
 // console.log(bestMovie);
 
 //**************************************************** 
+
+// ### Problem 3:
+// Create a Student class with the following properties : studentName, codeSchoolCohort, and grades(grades should be an array of objects and each object should have the properties assignemtName and assignemtnScore). Create a method that accepts a student name and updates the studentName of an instance of your Student Class. Create a method that accepts an assignment name and assignment score and adds a grade object to the grades array. Create two instances of this class with empty grade arrays. Update the name of one instance of the Student Class using the class method. Add one grade object to each instance of the Student Class grade array using the class method.
+
+// HINT : use object literal notation to create a grade object in the grade array for each instance of the Student Class
+
+//Create a class called Student
+class Student {
+    constructor(studentName, codeSchoolCohort, grades) {
+        this.studentName = studentName;
+        this.codeSchoolCohort = codeSchoolCohort;
+        this.grades = grades;
+    }
+    // addToGrades(assignmentName, assignmentScore) {
+    // }
+    //Create method that accepts a student name from user and replaces the value of studentName
+    acceptsAName() {
+        let newName = prompt("Enter a name");
+        this.studentName=newName;
+    }
+}
+//Create an object to be added to the class
+let newStudent = new Student("Mary","4","90")
+//test that the new object prints in the console
+console.log(newStudent);
+//Use the method acceptsAName to initiate the prompt and save it inside the previous object
+newStudent.acceptsAName();
+//Print the new object property values
+console.log(newStudent);
+
+//***********************************************************
