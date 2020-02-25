@@ -21,37 +21,39 @@
 
 //***************************************************
 
-// // ### Problem 2:
-// // Create a Movie class with the following properties: movieName, rating, and yearReleased. Create a method to change the rating and another one to change the yearReleased properties using prompt. Create an object of the class and use the two methods you created.
+// ### Problem 2:
+// Create a Movie class with the following properties: movieName, rating, and yearReleased. Create a method to change the rating and another one to change the yearReleased properties using prompt. Create an object of the class and use the two methods you created.
 
-// //Create class called Move and give three properties inside of the constructor
-// class Movie {
-//     constructor(movieName, rating, yearReleased) {
-//         this.movieName = movieName;
-//         this.rating = rating;
-//         this.yearReleased = yearReleased;
-//     }
-//     //Define method that changes the rating
-//     changeRating(newRating) {
-//         this.rating = newRating;
-//     }
-//     //Define method that changes the release date
-//     changeRelease(newRelease) {
-//         this.yearReleased = newRelease;
-//     }
-// }
-// //Create an object to be added to the class
-// let bestMovie = new Movie("Hook", "100%", "1991");
-// //test print current object properties
-// console.log(bestMovie);
-// //Change rating using the method inside of class
-// bestMovie.changeRating("99%");
-// //Print in console to see the change
-// console.log(bestMovie);
-// //Change release date using the method inside of class
-// bestMovie.changeRelease("1891");
-// //Print in console to see change
-// console.log(bestMovie);
+//Create class called Move and give three properties inside of the constructor
+class Movie {
+    constructor(movieName, rating, yearReleased) {
+        this.movieName = movieName;
+        this.rating = rating;
+        this.yearReleased = yearReleased;
+    }
+    //Define method that changes the rating
+    changeRating() {
+        let newRating=prompt("Enter a new rating:")
+        this.rating = newRating;
+    }
+    //Define method that changes the release date
+    changeRelease() {
+        let newRelease=prompt("Enter a new release:")
+        this.yearReleased = newRelease;
+    }
+}
+//Create an object to be added to the class
+let bestMovie = new Movie("Hook", "100%", "1991");
+//test print current object properties
+console.log(bestMovie);
+//Change rating using the method inside of class
+bestMovie.changeRating();
+//Print in console to see the change
+console.log(bestMovie);
+//Change release date using the method inside of class
+bestMovie.changeRelease();
+//Print in console to see change
+console.log(bestMovie);
 
 //**************************************************** 
 
@@ -60,28 +62,27 @@
 
 // HINT : use object literal notation to create a grade object in the grade array for each instance of the Student Class
 
-//Create a class called Student
-class Student {
-    constructor(studentName, codeSchoolCohort, grades) {
-        this.studentName = studentName;
-        this.codeSchoolCohort = codeSchoolCohort;
-        this.grades = grades;
-    }
-    // addToGrades(assignmentName, assignmentScore) {
-    // }
-    //Create method that accepts a student name from user and replaces the value of studentName
-    acceptsAName() {
-        let newName = prompt("Enter a name");
-        this.studentName=newName;
-    }
-}
-//Create an object to be added to the class
-let newStudent = new Student("Mary","4","90")
-//test that the new object prints in the console
-console.log(newStudent);
-//Use the method acceptsAName to initiate the prompt and save it inside the previous object
-newStudent.acceptsAName();
-//Print the new object property values
-console.log(newStudent);
+// //Create a class called Student
+// class Student {
+//     constructor(studentName, codeSchoolCohort, grades) {
+//         this.studentName = studentName;
+//         this.codeSchoolCohort = codeSchoolCohort;
+//         this.grades = grades;
+//     }
+    
+//     //Create method that accepts a student name from user and replaces the value of studentName
+//     acceptsAName() {
+//         let newName = prompt("Enter a name");
+//         this.studentName=newName;
+//     }
+// }
+// //Create an object to be added to the class
+// let newStudent = new Student("Mary","4","90")
+// //test that the new object prints in the console
+// console.log(newStudent);
+// //Use the method acceptsAName to initiate the prompt and save it inside the previous object
+// newStudent.acceptsAName();
+// //Print the new object property values
+// console.log(newStudent);
 
-//***********************************************************
+// //***********************************************************
